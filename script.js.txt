@@ -1,0 +1,25 @@
+// Lógica do simulador PJE
+
+// Funções para simular interações
+function simularEnvioPeticao(peticao) {
+    // Lógica para simular o envio de petição
+    console.log(`Petição enviada: ${peticao}`);
+}
+
+function simularConsultaProcesso(numeroProcesso) {
+    // Lógica para simular a consulta de processo
+    console.log(`Consultando processo: ${numeroProcesso}`);
+}
+
+// Evento ao carregar a página
+document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+
+    // Exemplo de interface simples
+    app.innerHTML = `
+        <h1>Simulador PJE</h1>
+        <button onclick="simularEnvioPeticao('Conteúdo da Petição')">Enviar Petição</button>
+        <br>
+        <button onclick="simularConsultaProcesso('123456')">Consultar Processo</button>
+    `;
+});
